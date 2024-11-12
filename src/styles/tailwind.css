@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
+  .quicksand-light {
+    @apply font-quicksand font-light;
+  }
 
+  .quicksand-regular {
+    @apply font-quicksand font-regular;
+  }
+
+  .quicksand-medium {
+    @apply font-quicksand font-medium;
+  }
+
+  .quicksand-semibold {
+    @apply font-quicksand font-semibold;
+  }
+
+  .quicksand-bold {
+    @apply font-quicksand font-bold;
+  }
 }

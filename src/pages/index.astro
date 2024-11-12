@@ -1,15 +1,133 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import moodboard from "../assets/images/moodboard.jpg";
+import font from "../assets/images/font.png";
+import bogstaver from "../assets/images/bogstaver.png";
+import net from "../assets/images/net.jpg";
+import skilt from "../assets/images/skilt.jpg";
+import kort from "../assets/images/kort.jpg";
+import tøj from "../assets/images/tøj.jpg";
+import produkt from "../assets/images/produkt.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title="Font">
+  <article class="mx-44">
+    <Image src={font} alt="billede af min font" class="mx-auto py-20" />
+
+    <section id="inspiration" class="mb-20 py-12">
+      <hr class="border-t-2 border-green-800 w-1/2" />
+      <h2 class="text-3xl text-green-900 pt-10 quicksand-bold">
+        Inspiration & konceptet
+      </h2>
+      <div class="grid grid-cols-3 py-10">
+        <div class="col-span-1 pr-8">
+          <p class="quicksand-medium">
+            "Blooming" er en detaljeret display-font, hvor hver enkelt bogstav
+            står for sig med sin egen unikke form, som blomster i fuldt flor.
+            Med bløde, organiske linjer og runde former har jeg skabt en
+            skrifttype, der udstråler forår og sommer – en tid hvor naturen
+            genopstår, og blomster springer ud. Fonten er inspireret af både
+            klassisk typografi og et moderne, naturligt udtryk, der minder om
+            blomstermotiver og organiske former. <br /><br />Inspirationen til
+            "Blooming" stammer fra mange visuelle referencer på Pinterest, hvor
+            jeg fandt fonte og designs, som fremhævede naturens lethed og
+            livsglæde. Kombinationen af bløde linjer og en lidt retro,
+            håndtegnet stil gør fonten perfekt til designs, der søger et varmt,
+            nostalgisk og naturinspireret udtryk. <br /><br />
+          </p>
+        </div>
+        <div class="col-span-2">
+          <Image src={moodboard} alt="billede af mit inspirations moodboard" />
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-t-2 border-green-800 w-1/2" />
+
+    <section id="udtryk" class="mb-20">
+      <h2 class="quicksand-bold text-3xl text-green-900 pt-10">Udtryk</h2>
+      <div class="grid grid-cols-2">
+        <div>
+          <p class="pt-10 quicksand-medium pr-10">
+            Denne font er udviklet med en legende tilgang til form og struktur,
+            inspireret af blomstrende natur og en følelse af forår og sommer. I
+            processen har jeg eksperimenteret med bløde, organiske former, hvor
+            bogstaverne hver især får lov til at blomstre frem. Det var vigtigt
+            for mig at skabe en font, der føles levende og vækker associationer
+            til naturens frihed og det spirende nye. Hvert bogstav er tegnet med
+            en intention om at skabe et harmonisk, men dynamisk udtryk, der
+            indbyder til både leg og fordybelse. Jeg har arbejdet digitalt fra
+            start og eksperimenteret med forskellige former og strukturer for at
+            finde den rette balance mellem det bløde og det fyldige. Ved at
+            justere proportionerne digitalt har jeg opnået en præcision og
+            harmoni, der giver fonten dens karakteristiske udtryk. Resultatet er
+            en font, der egner sig perfekt til kreative projekter og
+            statement-tekster, hvor dens unikke, "blooming" karakter virkelig
+            kan komme til sin ret.
+          </p>
+        </div>
+        <Image src={bogstaver} alt="billede af bogstaver" />
+      </div>
+    </section>
+
+    <hr class="border-t-2 border-green-800 w-1/2" />
+
+    <section id="brug" class="mb-20">
+      <div class="grid grid-cols-2 pt-16">
+        <div>
+          <h2 class="quicksand-bold text-3xl text-green-900">
+            Anvendelsesmuligheder
+          </h2>
+          <p class="pt-10 quicksand-medium">
+            "Blooming" kan bruges i mange kreative sammenhænge, hvor der er brug
+            for et unikt og levende udtryk. Den egner sig særligt godt til
+            projekter inden for bæredygtighed, mode, livsstil og kunst, hvor
+            budskabet handler om natur, vækst eller kreativitet. Fonten kan
+            bruges i logoer, branding, emballagedesign og på plakater, hvor den
+            kan tilføje en særlig stemning og personlighed. Billederne viser
+            eksempler på brug af "Blooming" på alt fra tasker og plakater til
+            etiketter og skiltning, hvor fontens detaljer kommer til sin ret og
+            bidrager til en indbydende og inspirerende atmosfære. <br /><br /> "Blooming"
+            er ideel til at blive brugt i større formater, hvor dens detaljer kan
+            komme til sin ret. Den er skabt til at give overskrifter, plakater og
+            branding en venlig, livlig og inspirerende atmosfære, og dens design
+            fremhæver kontrasten mellem de kantede og de bløde linjer, som naturen
+            selv.
+          </p>
+        </div>
+        <Image
+          src={tøj}
+          alt="billede af tshirt med logo på skilt"
+          class="h-auto w-96 pl-10"
+        />
+      </div>
+      <div class="grid grid-cols-2 gap-10">
+        <Image
+          src={net}
+          alt="billede af net med logo"
+          class="h-auto w-auto pt-10"
+        />
+        <Image
+          src={skilt}
+          alt="billede af logo på et skilt"
+          class="h-auto w-auto pt-10 object-fill"
+        />
+
+        <Image
+          src={kort}
+          alt="billede af kort med logo"
+          class="h-auto w-auto"
+        />
+        <Image
+          src={produkt}
+          alt="billede af en produkt med logo"
+          class="h-auto w-auto"
+        />
+      </div>
+    </section>
+  </article>
 </MainLayout>
