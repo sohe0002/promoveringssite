@@ -4,7 +4,8 @@ export default {
 	theme: {
 		extend: {
             colors: {
-            beige: '#FFFDF9', 
+            beige: '#EDF0E7', 
+            grøn: '#C1C8AE',
           },
           fontFamily: {
             quicksand: ['"Quicksand"', 'sans-serif'],

@@ -1,9 +1,8 @@
 ---
-
+import { Image } from "astro:assets";
+import font from "../assets/images/font.png";
 ---
 
-<div
-  class="px-44 quicksand-regular italic bg-green-900 text-beige py-10 grid justify-items-center"
->
-  <p>Denne side er lavet af Sofie Heesche</p>
+<div class="grid justify-items-center bg-grøn">
+  <Image src={font} alt="billede af min font" class="h-16 w-96 my-14" />
 </div>
